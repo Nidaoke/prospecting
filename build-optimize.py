@@ -49,23 +49,23 @@ def generate_ring_combinations(rings: List[Item], total_rings: int, max_per_ring
 items = [
     # Pendants
     Item("Phoenix Heart",     "pendant", 300, 0,   0,   0,   0, 0),
-    Item("Celestial Rings",   "pendant", 90,  250, 0,   0,   0, 0),
-    Item("Frosthorn Pendant", "pendant", 400, 200, 200, -.3, 0, 0),
+    #Item("Celestial Rings",   "pendant", 90,  250, 0,   0,   0, 0),
+    #Item("Frosthorn Pendant", "pendant", 400, 200, 200, -.3, 0, 0),
     Item("Frosthorn Pendant 6*", "pendant", 450, 225, 215, -.28, 0, 0),
     
     # Charms
-    Item("Royal Federation Crown", "charm", 90,  0,   0, 0, 0,  0),
+    #Item("Royal Federation Crown", "charm", 90,  0,   0, 0, 0,  0),
     Item("Phoenix Wings",          "charm", 300, -40, 0, 0, 0,  0),
-    Item("Cryogenic Preserver",    "charm", 250, 0,   0, 0, 40, -.2),
+    #Item("Cryogenic Preserver",    "charm", 250, 0,   0, 0, 40, -.2),
     Item("Cryogenic Preserver 6*",    "charm", 275, 0,   0, 0, 45, -.18),
-    Item("Fossilized Crown",       "charm", 250, 200, 0, 0, 0,  .3),
+    #Item("Fossilized Crown",       "charm", 250, 200, 0, 0, 0,  .3),
     Item("Fossilized Crown 6*",    "charm", 260, 225, 0, 0, 0,  .32),
     
     # Rings
-    Item("Apocalypse Bringer", "ring", 40,  0,  20, 0,   5, 0),
-    Item("Mythril Ring",       "ring", 80,  0,  0,  .4,  0, .4),
-    Item("Prismatic Star",     "ring", 20,  40, 10, .2,  3, .2),
-    Item("Solar Ring",         "ring", 100, 0,  8,  -.1, 2, -.1),
+    #Item("Apocalypse Bringer", "ring", 40,  0,  20, 0,   5, 0),
+    #Item("Mythril Ring",       "ring", 80,  0,  0,  .4,  0, .4),
+    #Item("Prismatic Star",     "ring", 20,  40, 10, .2,  3, .2),
+    #Item("Solar Ring",         "ring", 100, 0,  8,  -.1, 2, -.1),
     Item("Apocalypse Bringer 6*", "ring", 45,  0,  22, 0,   5.5, 0),
     Item("Mythril Ring 6*",       "ring", 90,  0,  0,  .42,  0, .42),
     Item("Prismatic Star 6*",     "ring", 22,  45, 11, .22,  3.2, .22),
@@ -73,10 +73,10 @@ items = [
 
     # Pans
     Item("Frostbite Pan",  "pan", 300, 250, 0, 0, 15, .8),
-    Item("Fossilized Pan", "pan", 200, 225, 0, 0, 8,  1),
+    #Item("Fossilized Pan", "pan", 200, 225, 0, 0, 8,  1),
 
     # Shovels
-    Item("Dragonflame Shovel", "shovel", 0, 0, 50, .6,  0, 0),
+    #Item("Dragonflame Shovel", "shovel", 0, 0, 50, .6,  0, 0),
     Item("Icebreaker",         "shovel", 0, 0, 60, 1.1, 0, 0),
 
     # Enchants
