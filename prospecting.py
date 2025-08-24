@@ -130,6 +130,18 @@ def getLuckOptions():
         int(input("  Shake Speed (default 0): ") or 0)
     ]
 
+    print("\nInclude meteor? (y/n, default n)")
+    if input("  Include meteor? ").strip().lower() == 'y':
+        statMods.append(2)
+    else:
+        statMods.append(1)
+    
+    print("\nInclude totems? (y/n, default n)")
+    if input("  Include totems? ").strip().lower() == 'y':
+        statMods.append(2)
+    else:
+        statMods.append(1)
+
     return [numOfBuilds, digConstant, shakeConstant, timeConstant, ringSlots, gearList, maxRings, statMods]
 
 def template_money():
@@ -158,11 +170,11 @@ def generate_ring_combinations(ring_max_list: List[Tuple[Item, int]], total_ring
     yield from backtrack(0, [], total_rings)
 
 def calculate_luck_efficiency(items_combination: List[Item], stat_mods, dig_constant, shake_constant, time_constant) -> float:
-    total_luck = sum(item.luck for item in items_combination) + stat_mods[0]
+    total_luck = (sum(item.luck for item in items_combination) * stat_mods[6] * stat_mods[7]) + stat_mods[0]
     total_capacity = sum(item.capacity for item in items_combination) + stat_mods[1]
-    total_dig_strength = sum(item.dig_strength for item in items_combination) + stat_mods[2]
+    total_dig_strength = (sum(item.dig_strength for item in items_combination) * stat_mods[7]) + stat_mods[2]
     total_dig_speed = sum(item.dig_speed for item in items_combination) + stat_mods[3]
-    total_shake_strength = sum(item.shake_strength for item in items_combination) + stat_mods[4]
+    total_shake_strength = (sum(item.shake_strength for item in items_combination) * stat_mods[7]) + stat_mods[4]
     total_shake_speed = sum(item.shake_speed for item in items_combination) + stat_mods[5]
 
     numerator = total_luck * math.sqrt(total_capacity) * .625
@@ -260,11 +272,11 @@ def print_results(combinations: List[Tuple[List[Item], float]], stat_mods):
                 print(f"  - {ring_name}")
         
         # Print totals
-        total_luck = sum(item.luck for item in combination) + stat_mods[0]
+        total_luck = (sum(item.luck for item in combination) * stat_mods[6] * stat_mods[7]) + stat_mods[0]
         total_capacity = sum(item.capacity for item in combination) + stat_mods[1]
-        total_dig_strength = sum(item.dig_strength for item in combination) + stat_mods[2]
+        total_dig_strength = (sum(item.dig_strength for item in combination) * stat_mods[7]) + stat_mods[2]
         total_dig_speed = sum(item.dig_speed for item in combination) + stat_mods[3]
-        total_shake_strength = sum(item.shake_strength for item in combination) + stat_mods[4]
+        total_shake_strength = (sum(item.shake_strength for item in combination) * stat_mods[7]) + stat_mods[4]
         total_shake_speed = sum(item.shake_speed for item in combination) + stat_mods[5]
         
         print(f"Totals: Luck={total_luck}, Capacity={total_capacity}, \n"

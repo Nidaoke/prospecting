@@ -20,6 +20,7 @@ This is a tool written in Python to help Prospecting players optimize their buil
     * List of gear to consider in the builds (5* and 6*)
     * Maximum number of each ring (since I know you don't have 8 voids yet)
     * Specific stat modifiers (potions, quest rewards)
+    * Enable/Disable Meteor and Totems
   * Shows luck efficiency for each build (number of rolls per second)
 
 ### Upcoming Features
