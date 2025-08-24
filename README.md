@@ -3,10 +3,10 @@
 ## What's the best build (TL;DR)
 For Luck Efficiency (also known as mythic/exotic hunting builds) using my default constants (final results may vary slightly based on the constants), the best build consists of:
 
-Pan: Frostbite Pan (Infernal)
-Pendant: Frosthorn Pendant
-Charm: Cryogenic Preserver
-Rings: 4x Mythril and 4x Vortex
+    Pan: Frostbite Pan (Infernal)
+    Pendant: Frosthorn Pendant
+    Charm: Cryogenic Preserver
+    Rings: 4x Mythril and 4x Vortex
 
 ## What is this?
 This is a tool written in Python to help Prospecting players optimize their builds
