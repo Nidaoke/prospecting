@@ -1,12 +1,12 @@
 # Nidolya's Prospecting Tool
 
 ## What's the best build (TL;DR)
-For Luck Efficiency (also known as mythic/exotic hunting builds) using my default constants (final results may vary slightly based on the constants), the best build consists of:
-
-    Pan: Frostbite Pan (Infernal)
-    Pendant: Frosthorn Pendant
-    Charm: Cryogenic Preserver
-    Rings: 4x Mythril and 4x Vortex
+For Luck Efficiency (also known as mythic/exotic hunting builds) the best builds will have these aspects:
+* Frostbite Pan
+  * Use Galactic until you get 2 vortex rings
+* Infernal Enchant
+* Frosthorn Pendant and Cryogenic Preserver
+* 4x Vortex Rings and 4x Mythril Rings (5 and 3 is also good when under totems)
 
 ## What is this?
 This is a tool written in Python to help Prospecting players optimize their builds
