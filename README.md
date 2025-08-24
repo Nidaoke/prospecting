@@ -11,6 +11,9 @@ For Luck Efficiency (also known as mythic/exotic hunting builds) the best builds
 ## What is this?
 This is a tool written in Python to help Prospecting players optimize their builds
 
+### Results
+![Results](results.png)
+
 ### Features
 * Calculate optimal luck efficiency builds
   * Fully configurable options include
