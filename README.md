@@ -62,10 +62,10 @@ The time per pan is equal to the time spent digging, time spent shaking, and tim
 
 1. Time spent digging:
   The total time spent digging is equal to the number of digs we have to complete multiplied by how fast it takes to complete one dig (in seconds).
-  * Number of digs is equal to our capacity divided by our dig strength (times 1.5 if making perfect digs), rounded up to the nearest integer (if we have 100 capacity, and we fill 30 of it per dig, we need to do 4 digs to fill it up). This is expressed as ceil(capacity / (dig strength * 1.5)) 
-    * ceil is just a function that rounds a number up to the nearest integer
-  * Time spent per dig is a function that it inversely proportional to our dig speed (a higher dig speed means we spend less time on each dig). This is expressed as (c / dig speed), where c is some constant factor.
-    * What is this constant factor? It's just a number of seconds that correlates dig speed to time. This exact value is not known, and seems to depend on a variety of non-controllable factors, including latency and framerate. In personal tests, I've found this to be about 2 (which means that, at 100% dig speed, it takes about 2 seconds from when you first click dig to when you can effectively begin clicking dig again). As such, I leave this constant defaulted around 2, but feel free to test and chance this as you will.
+    * Number of digs is equal to our capacity divided by our dig strength (times 1.5 if making perfect digs), rounded up to the nearest integer (if we have 100 capacity, and we fill 30 of it per dig, we need to do 4 digs to fill it up). This is expressed as ceil(capacity / (dig strength * 1.5)) 
+        * ceil is just a function that rounds a number up to the nearest integer
+    * Time spent per dig is a function that it inversely proportional to our dig speed (a higher dig speed means we spend less time on each dig). This is expressed as (c / dig speed), where c is some constant factor.
+        * What is this constant factor? It's just a number of seconds that correlates dig speed to time. This exact value is not known, and seems to depend on a variety of non-controllable factors, including latency and framerate. In personal tests, I've found this to be about 2 (which means that, at 100% dig speed, it takes about 2 seconds from when you first click dig to when you can effectively begin clicking dig again). As such, I leave this constant defaulted around 2, but feel free to test and chance this as you will.
   
   Thus, we can define the time spent digging as (ceil(capacity / (dig strength * 1.5)) / (c / dig speed))
 
